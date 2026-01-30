@@ -226,6 +226,7 @@
             display: none;
             align-items: center;
             justify-content: center;
+            padding: 20px;
         }
 
         .secret-menu.active {
@@ -238,10 +239,9 @@
             padding: 30px;
             max-width: 400px;
             width: 90%;
-            max-height: 80vh;
+            max-height: 85vh;
             display: flex;
             flex-direction: column;
-            overflow: hidden;
         }
 
         .menu-header {
@@ -281,8 +281,6 @@
             overflow-y: auto;
             overflow-x: hidden;
             padding-right: 5px;
-            flex: 1;
-            min-height: 0;
         }
 
         .menu-content::-webkit-scrollbar {
@@ -296,10 +294,6 @@
         .menu-content::-webkit-scrollbar-thumb {
             background: #444;
             border-radius: 3px;
-        }
-
-        .menu-content::-webkit-scrollbar-thumb:hover {
-            background: #555;
         }
 
         .mode-button {
@@ -871,31 +865,25 @@
             // Add theme class if not iPhone (iPhone is default/no class)
             if (theme === 'sa') {
                 document.body.classList.add('sa');
-                const acBtn = document.getElementById('ac-button');
-                if (acBtn) acBtn.textContent = 'C';
+                document.getElementById('ac-button').textContent = 'C';
             } else if (theme === 'android-light') {
                 document.body.classList.add('android-light');
-                const acBtn = document.getElementById('ac-button');
-                if (acBtn) acBtn.textContent = 'AC';
+                document.getElementById('ac-button').textContent = 'AC';
             } else if (theme === 'android-dark') {
                 document.body.classList.add('android-dark');
-                const acBtn = document.getElementById('ac-button');
-                if (acBtn) acBtn.textContent = 'AC';
+                document.getElementById('ac-button').textContent = 'AC';
             } else {
                 // iPhone
-                const acBtn = document.getElementById('ac-button');
-                if (acBtn) acBtn.textContent = 'AC';
+                document.getElementById('ac-button').textContent = 'AC';
             }
             
             // Update button states
-            const themeButtons = ['theme-iphone-btn', 'theme-sa-btn', 'theme-android-light-btn', 'theme-android-dark-btn'];
-            themeButtons.forEach(btnId => {
-                const btn = document.getElementById(btnId);
-                if (btn) btn.classList.remove('selected');
-            });
+            document.getElementById('theme-iphone-btn').classList.remove('selected');
+            document.getElementById('theme-sa-btn').classList.remove('selected');
+            document.getElementById('theme-android-light-btn').classList.remove('selected');
+            document.getElementById('theme-android-dark-btn').classList.remove('selected');
             
-            const selectedBtn = document.getElementById(`theme-${theme}-btn`);
-            if (selectedBtn) selectedBtn.classList.add('selected');
+            document.getElementById(`theme-${theme}-btn`).classList.add('selected');
         }
 
         function updateDisplay() {
