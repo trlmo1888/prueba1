@@ -98,7 +98,7 @@
             justify-content: center;
             padding: 0;
             margin: 0;
-            line-height: 0;
+            line-height: 0.95;
         }
 
         .btn-orange.active {
@@ -277,254 +277,6 @@
             font-weight: 600;
         }
 
-        /* Spectator+ mode styles */
-        .submode-buttons {
-            display: flex;
-            gap: 10px;
-            margin-top: 12px;
-        }
-
-        .submode-btn {
-            flex: 1;
-            padding: 15px;
-            border-radius: 12px;
-            background: #2c2c2e;
-            color: #fff;
-            border: 2px solid #444;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .submode-btn.selected {
-            border-color: #ff9f0a;
-            background: #3c3c3e;
-        }
-
-        .format-buttons {
-            display: flex;
-            gap: 10px;
-            margin-top: 12px;
-            align-items: center;
-        }
-
-        .format-btn {
-            flex: 1;
-            padding: 12px;
-            border-radius: 10px;
-            background: #2c2c2e;
-            color: #fff;
-            border: 2px solid #444;
-            font-size: 15px;
-            cursor: pointer;
-        }
-
-        .format-btn.selected {
-            background: #ff9f0a;
-            border-color: #ff9f0a;
-            color: #000;
-            font-weight: 600;
-        }
-
-        .settings-btn {
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
-            background: #2c2c2e;
-            color: #fff;
-            border: 2px solid #444;
-            font-size: 18px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        /* Name popup */
-        .name-popup {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.95);
-            z-index: 2000;
-            display: none;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .name-popup.active {
-            display: flex;
-        }
-
-        .name-popup-content {
-            background: #1c1c1e;
-            border-radius: 20px;
-            padding: 30px;
-            min-width: 320px;
-        }
-
-        .name-popup-title {
-            color: #fff;
-            font-size: 20px;
-            font-weight: 600;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .name-input {
-            width: 100%;
-            padding: 15px;
-            border-radius: 10px;
-            border: 2px solid #333;
-            background: #000;
-            color: #fff;
-            font-size: 18px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .ok-btn {
-            width: 100%;
-            padding: 15px;
-            border-radius: 10px;
-            background: #ff9f0a;
-            color: #000;
-            border: none;
-            font-size: 18px;
-            font-weight: 600;
-            cursor: pointer;
-        }
-
-        /* Info popup */
-        .info-popup {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.95);
-            z-index: 2000;
-            display: none;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .info-popup.active {
-            display: flex;
-        }
-
-        .info-popup-content {
-            background: #1c1c1e;
-            border-radius: 20px;
-            padding: 30px;
-            min-width: 320px;
-            max-width: 500px;
-            max-height: 80vh;
-            overflow-y: auto;
-        }
-
-        .info-popup-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        .info-content {
-            background: #2c2c2e;
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 20px;
-            color: #fff;
-            line-height: 1.6;
-        }
-
-        .info-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .info-list li {
-            padding: 8px 0;
-            border-bottom: 1px solid #444;
-        }
-
-        .info-list li:last-child {
-            border-bottom: none;
-        }
-
-        .info-label {
-            color: #999;
-            font-size: 14px;
-        }
-
-        .info-value {
-            color: #fff;
-            font-size: 16px;
-            font-weight: 500;
-        }
-
-        .copy-btn {
-            width: 100%;
-            padding: 15px;
-            border-radius: 10px;
-            background: #ff9f0a;
-            color: #000;
-            border: none;
-            font-size: 18px;
-            font-weight: 600;
-            cursor: pointer;
-            margin-bottom: 10px;
-        }
-
-        .fav-number-display {
-            text-align: center;
-            color: #999;
-            font-size: 14px;
-            margin-top: 10px;
-        }
-
-        /* Template editor popup */
-        .template-popup {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.95);
-            z-index: 3000;
-            display: none;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .template-popup.active {
-            display: flex;
-        }
-
-        .template-popup-content {
-            background: #1c1c1e;
-            border-radius: 20px;
-            padding: 30px;
-            min-width: 320px;
-            max-width: 500px;
-        }
-
-        .template-textarea {
-            width: 100%;
-            min-height: 150px;
-            padding: 15px;
-            border-radius: 10px;
-            border: 2px solid #333;
-            background: #000;
-            color: #fff;
-            font-size: 16px;
-            resize: vertical;
-            margin-bottom: 20px;
-            font-family: inherit;
-        }
-
     </style>
 </head>
 <body>
@@ -595,85 +347,7 @@
                     <div class="input-label">Introduce el número final deseado:</div>
                     <input type="text" class="custom-input" id="custom-result" placeholder="Ej: 123456789" maxlength="16">
                 </div>
-                
-                <!-- Spectator+ Mode -->
-                <button class="mode-button" id="spectator-mode-btn" onclick="selectMode('spectator')">
-                    <span>Espectador+</span>
-                    <span class="checkmark"></span>
-                </button>
-                <div id="spectator-options" style="display: none;">
-                    <!-- Submode buttons -->
-                    <div class="submode-buttons">
-                        <button class="submode-btn selected" id="spectator-date-btn" onclick="selectSpectatorSubmode('date')">Hora</button>
-                        <button class="submode-btn" id="spectator-custom-btn" onclick="selectSpectatorSubmode('custom')">Personalizado</button>
-                    </div>
-                    
-                    <!-- Format buttons -->
-                    <div class="format-buttons">
-                        <button class="format-btn selected" id="format-list-btn" onclick="selectFormat('list')">Lista</button>
-                        <button class="format-btn" id="format-text-btn" onclick="selectFormat('text')">Texto</button>
-                        <button class="settings-btn" id="template-settings-btn" onclick="openTemplateEditor()" style="display: none;">⚙</button>
-                    </div>
-                    
-                    <!-- Time buttons for date submode -->
-                    <div class="time-buttons" id="spectator-date-time-buttons">
-                        <button class="time-btn selected" onclick="selectTimeThreshold(10)">10s</button>
-                        <button class="time-btn" onclick="selectTimeThreshold(15)">15s</button>
-                        <button class="time-btn" onclick="selectTimeThreshold(20)">20s</button>
-                        <button class="time-btn" onclick="selectTimeThreshold('10-15')">10-15s</button>
-                        <button class="time-btn" onclick="selectTimeThreshold('10-20')">10-20s</button>
-                    </div>
-                    
-                    <!-- Options for custom submode -->
-                    <div id="spectator-custom-options" style="display: none;">
-                        <div class="time-buttons">
-                            <button class="time-btn selected" onclick="selectTimeThreshold(10)">10s</button>
-                            <button class="time-btn" onclick="selectTimeThreshold(15)">15s</button>
-                            <button class="time-btn" onclick="selectTimeThreshold(20)">20s</button>
-                            <button class="time-btn" onclick="selectTimeThreshold('10-15')">10-15s</button>
-                            <button class="time-btn" onclick="selectTimeThreshold('10-20')">10-20s</button>
-                        </div>
-                        <div class="custom-input-container active">
-                            <div class="input-label">Introduce el número final deseado:</div>
-                            <input type="text" class="custom-input" id="spectator-custom-result" placeholder="Ej: 123456789" maxlength="16">
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-    </div>
-
-    <!-- Name Popup -->
-    <div class="name-popup" id="name-popup">
-        <div class="name-popup-content">
-            <div class="name-popup-title">Nombre del espectador</div>
-            <input type="text" class="name-input" id="spectator-name" placeholder="Escribe el nombre...">
-            <button class="ok-btn" onclick="confirmName()">OK</button>
-        </div>
-    </div>
-
-    <!-- Info Popup -->
-    <div class="info-popup" id="info-popup">
-        <div class="info-popup-content">
-            <div class="info-popup-header">
-                <div class="menu-title">Información</div>
-                <button class="close-btn" onclick="closeInfoPopup()">✕</button>
-            </div>
-            <div class="info-content" id="info-content"></div>
-            <button class="copy-btn" onclick="copyInfo()">Copiar</button>
-            <div class="fav-number-display" id="fav-number-display" style="display: none;"></div>
-        </div>
-    </div>
-
-    <!-- Template Editor Popup -->
-    <div class="template-popup" id="template-popup">
-        <div class="template-popup-content">
-            <div class="menu-header">
-                <div class="menu-title">Editar Template</div>
-                <button class="close-btn" onclick="closeTemplateEditor()">✕</button>
-            </div>
-            <textarea class="template-textarea" id="template-text"></textarea>
-            <button class="ok-btn" onclick="saveTemplate()">Guardar</button>
         </div>
     </div>
 
@@ -689,22 +363,14 @@
         let screenLocked = false;
         
         // Mode management
-        let magicMode = 'date'; // 'date', 'custom', or 'spectator'
+        let magicMode = 'date'; // 'date' or 'custom'
         let customResult = '';
-        let timeThreshold = 10; // Default: 10 seconds
+        let timeThreshold = 10; // Default: 10 seconds (can be 10, 15, 20, '10-15', '10-20')
         
         // Long press for equals button
         let equalsLongPressTimer = null;
         let isEqualsLongPress = false;
         let customModeActivated = false;
-        
-        // Spectator+ mode variables
-        let spectatorSubmode = 'date'; // 'date' or 'custom'
-        let spectatorFormat = 'list'; // 'list' or 'text'
-        let spectatorName = '';
-        let spectatorNumbers = []; // [birthdate, favNumber, ...extras]
-        let spectatorCustomResult = '';
-        let textTemplate = 'Hoy haré un poco de magia para [Nombre]. Tiene [Edad] años y me da la sensación de que su signo zodiacal es [Signo zodiacal]. Cada pequeño detalle suyo ha sido parte de la ilusión que he creado.';
 
         function updateDisplay() {
             let displayValue = currentValue;
@@ -777,20 +443,6 @@
         }
 
         function clearAll() {
-            // In Spectator+ mode after magic, show info popup
-            if (magicMode === 'spectator' && magicTriggered) {
-                const infoContent = generateInfoContent();
-                document.getElementById('info-content').innerHTML = infoContent;
-                document.getElementById('info-popup').classList.add('active');
-                return;
-            }
-            
-            // In Spectator+ mode without name, show name popup
-            if (magicMode === 'spectator' && !spectatorName) {
-                document.getElementById('name-popup').classList.add('active');
-                return;
-            }
-            
             currentValue = '0';
             previousValue = null;
             operation = null;
@@ -801,7 +453,6 @@
             screenLocked = false;
             customModeActivated = false;
             isEqualsLongPress = false;
-            spectatorNumbers = [];
             clearTimeout(equalsLongPressTimer);
             document.querySelectorAll('.btn-orange').forEach(btn => btn.classList.remove('active'));
             updateDisplay();
@@ -861,27 +512,6 @@
                 return;
             }
 
-            // SPECTATOR+ MODE
-            if (magicMode === 'spectator' && op === '+' && !magicTriggered) {
-                if (spectatorSubmode === 'date' && multiplicationCount >= 1) {
-                    waitingForMagicTrigger = true;
-                    previousValue = currentValue;
-                    operation = '+';
-                    shouldResetDisplay = true;
-                    document.querySelectorAll('.btn-orange').forEach(btn => btn.classList.remove('active'));
-                    event.target.classList.add('active');
-                    return;
-                } else if (spectatorSubmode === 'custom' && customModeActivated) {
-                    waitingForMagicTrigger = true;
-                    previousValue = currentValue;
-                    operation = '+';
-                    shouldResetDisplay = true;
-                    document.querySelectorAll('.btn-orange').forEach(btn => btn.classList.remove('active'));
-                    event.target.classList.add('active');
-                    return;
-                }
-            }
-
             if (previousValue !== null && operation && !shouldResetDisplay) {
                 // Don't calculate, just change operation
                 operation = op;
@@ -914,18 +544,6 @@
                     case '×':
                         result = prev * curr;
                         multiplicationCount++;
-                        
-                        // Capture numbers in Spectator+ mode
-                        if (magicMode === 'spectator' && !magicTriggered) {
-                            // First multiplication: capture both numbers (birthdate and fav number)
-                            if (spectatorNumbers.length === 0) {
-                                spectatorNumbers.push(prev); // Birthdate (first number)
-                                spectatorNumbers.push(curr); // Favorite number (second number)
-                            } else {
-                                // Additional multiplications: just capture as extras
-                                spectatorNumbers.push(curr);
-                            }
-                        }
                         break;
                     case '÷':
                         result = prev / curr;
@@ -991,14 +609,9 @@
             
             if (magicMode === 'date') {
                 target = getTargetDateTime();
-            } else if (magicMode === 'custom') {
+            } else {
+                // Custom mode
                 target = customResult || '0';
-            } else if (magicMode === 'spectator') {
-                if (spectatorSubmode === 'date') {
-                    target = getTargetDateTime();
-                } else {
-                    target = spectatorCustomResult || '0';
-                }
             }
             
             const currentNum = parseFloat(previousValue);
@@ -1042,91 +655,25 @@
 
         function closeSecretMenu() {
             document.getElementById('secret-menu').classList.remove('active');
-            
-            // If Spectator+ mode, show name popup
-            if (magicMode === 'spectator') {
-                document.getElementById('name-popup').classList.add('active');
-            }
         }
 
         function selectMode(mode) {
             magicMode = mode;
             
-            // Remove all selected states
             document.getElementById('date-mode-btn').classList.remove('selected');
             document.getElementById('custom-mode-btn').classList.remove('selected');
-            document.getElementById('spectator-mode-btn').classList.remove('selected');
-            
-            // Hide all options
-            document.getElementById('date-time-buttons').style.display = 'none';
-            document.getElementById('custom-time-buttons').style.display = 'none';
-            document.getElementById('custom-input-container').classList.remove('active');
-            document.getElementById('spectator-options').style.display = 'none';
             
             if (mode === 'date') {
                 document.getElementById('date-mode-btn').classList.add('selected');
+                document.getElementById('custom-input-container').classList.remove('active');
                 document.getElementById('date-time-buttons').style.display = 'flex';
-            } else if (mode === 'custom') {
+                document.getElementById('custom-time-buttons').style.display = 'none';
+            } else {
                 document.getElementById('custom-mode-btn').classList.add('selected');
                 document.getElementById('custom-input-container').classList.add('active');
+                document.getElementById('date-time-buttons').style.display = 'none';
                 document.getElementById('custom-time-buttons').style.display = 'flex';
-            } else if (mode === 'spectator') {
-                document.getElementById('spectator-mode-btn').classList.add('selected');
-                document.getElementById('spectator-options').style.display = 'block';
-                spectatorNumbers = []; // Reset
             }
-        }
-
-        function selectSpectatorSubmode(submode) {
-            spectatorSubmode = submode;
-            
-            document.getElementById('spectator-date-btn').classList.remove('selected');
-            document.getElementById('spectator-custom-btn').classList.remove('selected');
-            
-            if (submode === 'date') {
-                document.getElementById('spectator-date-btn').classList.add('selected');
-                document.getElementById('spectator-date-time-buttons').style.display = 'flex';
-                document.getElementById('spectator-custom-options').style.display = 'none';
-            } else {
-                document.getElementById('spectator-custom-btn').classList.add('selected');
-                document.getElementById('spectator-date-time-buttons').style.display = 'none';
-                document.getElementById('spectator-custom-options').style.display = 'block';
-            }
-        }
-
-        function selectFormat(format) {
-            spectatorFormat = format;
-            
-            document.getElementById('format-list-btn').classList.remove('selected');
-            document.getElementById('format-text-btn').classList.remove('selected');
-            
-            if (format === 'list') {
-                document.getElementById('format-list-btn').classList.add('selected');
-                document.getElementById('template-settings-btn').style.display = 'none';
-            } else {
-                document.getElementById('format-text-btn').classList.add('selected');
-                document.getElementById('template-settings-btn').style.display = 'flex';
-            }
-        }
-
-        function confirmName() {
-            spectatorName = document.getElementById('spectator-name').value;
-            document.getElementById('name-popup').classList.remove('active');
-            spectatorNumbers = [];
-        }
-
-        function openTemplateEditor() {
-            document.getElementById('template-text').value = textTemplate;
-            document.getElementById('template-popup').classList.add('active');
-        }
-
-        function closeTemplateEditor() {
-            document.getElementById('template-popup').classList.remove('active');
-        }
-
-        function saveTemplate() {
-            textTemplate = document.getElementById('template-text').value;
-            closeTemplateEditor();
         }
 
         function selectTimeThreshold(threshold) {
@@ -1145,183 +692,6 @@
             customResult = e.target.value.replace(/\D/g, '');
             e.target.value = customResult;
         });
-
-        document.getElementById('spectator-custom-result').addEventListener('input', function(e) {
-            spectatorCustomResult = e.target.value.replace(/\D/g, '');
-            e.target.value = spectatorCustomResult;
-        });
-
-        // Spectator+ helper functions
-        function calculateAge(birthdate) {
-            const bdStr = birthdate.toString().padStart(6, '0');
-            const day = parseInt(bdStr.substring(0, 2));
-            const month = parseInt(bdStr.substring(2, 4));
-            let year = parseInt(bdStr.substring(4, 6));
-            
-            // Smart dynamic year detection that works forever:
-            const currentYear = new Date().getFullYear();
-            const currentYearShort = currentYear % 100; // Last 2 digits of current year
-            
-            // Try both interpretations
-            const year2000s = 2000 + year;
-            const year1900s = 1900 + year;
-            
-            // Calculate what the age would be in each case
-            const age2000s = currentYear - year2000s;
-            const age1900s = currentYear - year1900s;
-            
-            // Decision logic:
-            // 1. If 2000s would make them not born yet (negative age), use 1900s
-            // 2. If 1900s would make them over 110 years old (unrealistic), use 2000s
-            // 3. Otherwise: if the year is <= current year's last 2 digits, assume 2000s
-            //    Example in 2026: 00-26 = 2000s, 27-99 = 1900s
-            //    Example in 2050: 00-50 = 2000s, 51-99 = 1900s
-            
-            if (age2000s < 0) {
-                // Not born yet in 2000s interpretation, must be 1900s
-                year = year1900s;
-            } else if (age1900s > 110) {
-                // Over 110 years old in 1900s interpretation, must be 2000s
-                year = year2000s;
-            } else {
-                // Both valid - use current year as pivot
-                year = year <= currentYearShort ? year2000s : year1900s;
-            }
-            
-            const today = new Date();
-            const birthDate = new Date(year, month - 1, day);
-            
-            let age = today.getFullYear() - birthDate.getFullYear();
-            const monthDiff = today.getMonth() - birthDate.getMonth();
-            
-            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
-                age--;
-            }
-            
-            return age;
-        }
-
-        function getZodiacSign(birthdate) {
-            const bdStr = birthdate.toString().padStart(6, '0');
-            const day = parseInt(bdStr.substring(0, 2));
-            const month = parseInt(bdStr.substring(2, 4));
-            
-            // Zodiac signs with proper date ranges
-            if ((month === 3 && day >= 21) || (month === 4 && day <= 19)) return 'Aries';
-            if ((month === 4 && day >= 20) || (month === 5 && day <= 20)) return 'Tauro';
-            if ((month === 5 && day >= 21) || (month === 6 && day <= 20)) return 'Géminis';
-            if ((month === 6 && day >= 21) || (month === 7 && day <= 22)) return 'Cáncer';
-            if ((month === 7 && day >= 23) || (month === 8 && day <= 22)) return 'Leo';
-            if ((month === 8 && day >= 23) || (month === 9 && day <= 22)) return 'Virgo';
-            if ((month === 9 && day >= 23) || (month === 10 && day <= 22)) return 'Libra';
-            if ((month === 10 && day >= 23) || (month === 11 && day <= 21)) return 'Escorpio';
-            if ((month === 11 && day >= 22) || (month === 12 && day <= 21)) return 'Sagitario';
-            if ((month === 12 && day >= 22) || (month === 1 && day <= 19)) return 'Capricornio';
-            if ((month === 1 && day >= 20) || (month === 2 && day <= 18)) return 'Acuario';
-            if ((month === 2 && day >= 19) || (month === 3 && day <= 20)) return 'Piscis';
-            
-            return 'Desconocido';
-        }
-
-        function generateInfoContent() {
-            if (spectatorNumbers.length < 2) {
-                return '<p style="color: #999;">No hay suficiente información</p>';
-            }
-            
-            const birthdate = spectatorNumbers[0];
-            const favNumber = spectatorNumbers[1];
-            const age = calculateAge(birthdate);
-            const zodiac = getZodiacSign(birthdate);
-            
-            if (spectatorFormat === 'list') {
-                return `
-                    <ul class="info-list">
-                        <li>
-                            <div class="info-label">Nombre</div>
-                            <div class="info-value">${spectatorName}</div>
-                        </li>
-                        <li>
-                            <div class="info-label">Edad</div>
-                            <div class="info-value">${age} años</div>
-                        </li>
-                        <li>
-                            <div class="info-label">Signo Zodiacal</div>
-                            <div class="info-value">${zodiac}</div>
-                        </li>
-                        <li>
-                            <div class="info-label">Número Favorito</div>
-                            <div class="info-value">${favNumber}</div>
-                        </li>
-                    </ul>
-                `;
-            } else {
-                // Text format
-                let text = textTemplate;
-                text = text.replace(/\[Nombre\]/g, spectatorName);
-                text = text.replace(/\[Edad\]/g, age.toString());
-                text = text.replace(/\[Signo zodiacal\]/g, zodiac);
-                
-                // Show favorite number separately in text mode
-                document.getElementById('fav-number-display').innerHTML = `Número favorito: ${favNumber}`;
-                document.getElementById('fav-number-display').style.display = 'block';
-                
-                return `<p style="color: #fff; line-height: 1.8;">${text}</p>`;
-            }
-        }
-
-        function closeInfoPopup() {
-            document.getElementById('info-popup').classList.remove('active');
-            document.getElementById('fav-number-display').style.display = 'none';
-            
-            // Reset everything
-            currentValue = '0';
-            previousValue = null;
-            operation = null;
-            shouldResetDisplay = false;
-            multiplicationCount = 0;
-            magicTriggered = false;
-            waitingForMagicTrigger = false;
-            screenLocked = false;
-            customModeActivated = false;
-            spectatorNumbers = [];
-            spectatorName = ''; // Reset name so AC will prompt for name again
-            
-            document.querySelectorAll('.btn-orange').forEach(btn => btn.classList.remove('active'));
-            updateDisplay();
-        }
-
-        function copyInfo() {
-            let textToCopy = '';
-            
-            if (spectatorNumbers.length < 2) return;
-            
-            const birthdate = spectatorNumbers[0];
-            const favNumber = spectatorNumbers[1];
-            const age = calculateAge(birthdate);
-            const zodiac = getZodiacSign(birthdate);
-            
-            if (spectatorFormat === 'list') {
-                textToCopy = `Nombre: ${spectatorName}
-Edad: ${age} años
-Signo Zodiacal: ${zodiac}
-Número Favorito: ${favNumber}`;
-            } else {
-                let text = textTemplate;
-                text = text.replace(/\[Nombre\]/g, spectatorName);
-                text = text.replace(/\[Edad\]/g, age.toString());
-                text = text.replace(/\[Signo zodiacal\]/g, zodiac);
-                textToCopy = text;
-            }
-            
-            navigator.clipboard.writeText(textToCopy).then(() => {
-                const btn = event.target;
-                const originalText = btn.textContent;
-                btn.textContent = '¡Copiado!';
-                setTimeout(() => {
-                    btn.textContent = originalText;
-                }, 1500);
-            });
-        }
 
         // Initialize
         updateDisplay();
