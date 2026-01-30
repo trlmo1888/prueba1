@@ -13,93 +13,9 @@
             user-select: none;
         }
 
-        /* Theme variables */
-        :root {
-            /* iPhone theme (default) */
-            --bg-color: #000;
-            --display-color: #fff;
-            --btn-gray-bg: #a5a5a5;
-            --btn-gray-text: #000;
-            --btn-orange-bg: #ff9f0a;
-            --btn-orange-text: #fff;
-            --btn-dark-bg: #333333;
-            --btn-dark-text: #fff;
-        }
-
-        /* Android Light theme */
-        body.android-light {
-            --bg-color: #f1f3f4;
-            --display-color: #202124;
-            --btn-gray-bg: #dadce0;
-            --btn-gray-text: #202124;
-            --btn-orange-bg: #1a73e8;
-            --btn-orange-text: #fff;
-            --btn-dark-bg: #fff;
-            --btn-dark-text: #202124;
-        }
-
-        /* Android Dark theme */
-        body.android-dark {
-            --bg-color: #202124;
-            --display-color: #fff;
-            --btn-gray-bg: #5f6368;
-            --btn-gray-text: #fff;
-            --btn-orange-bg: #8ab4f8;
-            --btn-orange-text: #202124;
-            --btn-dark-bg: #3c4043;
-            --btn-dark-text: #fff;
-        }
-
-        /* S.A. theme (Samsung/Android style - with C button) */
-        body.sa {
-            --bg-color: #000;
-            --display-color: #e0d5c7;
-            --btn-gray-bg: #2a2a2a;
-            --btn-gray-text: #e0d5c7;
-            --btn-orange-bg: #8a9277;
-            --btn-orange-text: #000;
-            --btn-dark-bg: #1f1f1f;
-            --btn-dark-text: #e0d5c7;
-        }
-
-        /* S.A. mode typography - Samsung style */
-        body.sa .display-text {
-            font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-            font-weight: 300;
-            letter-spacing: -0.01em;
-        }
-
-        body.sa .btn {
-            font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-        }
-
-        body.sa .btn-gray {
-            font-weight: 400;
-            font-size: 34px;
-        }
-
-        body.sa .btn-dark {
-            font-weight: 300;
-            font-size: 38px;
-        }
-
-        body.sa .btn-orange {
-            font-weight: 400;
-            font-size: 42px;
-        }
-
-        body.sa .btn-zero {
-            font-size: 38px;
-        }
-
-        body.sa .buttons {
-            gap: 12px;
-            padding: 12px;
-        }
-
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            background: var(--bg-color);
+            background: #000;
             margin: 0;
             padding: 0;
             width: 100vw;
@@ -111,7 +27,7 @@
         .calculator {
             width: 100vw;
             height: 100vh;
-            background: var(--bg-color);
+            background: #000;
             display: flex;
             flex-direction: column;
             padding: 0;
@@ -128,7 +44,7 @@
         }
 
         .display-text {
-            color: var(--display-color);
+            color: #fff;
             font-size: 96px;
             font-weight: 200;
             text-align: right;
@@ -166,20 +82,15 @@
         }
 
         .btn-gray {
-            background: var(--btn-gray-bg);
-            color: var(--btn-gray-text);
+            background: #a5a5a5;
+            color: #000;
             font-size: 38px;
             font-weight: 500;
         }
 
-        /* S.A. mode: First gray button (C) should be red */
-        body.sa .btn-gray:first-of-type {
-            color: #f44336;
-        }
-
         .btn-orange {
-            background: var(--btn-orange-bg);
-            color: var(--btn-orange-text);
+            background: #ff9f0a;
+            color: #fff;
             font-size: 46px;
             font-weight: 400;
             display: flex;
@@ -189,19 +100,15 @@
             margin: 0;
             line-height: 0;
         }
-        
-        .btn-orange span {
-            transform: translateY(-2px);
-        }
 
         .btn-orange.active {
-            background: var(--btn-orange-text);
-            color: var(--btn-orange-bg);
+            background: #fff;
+            color: #ff9f0a;
         }
 
         .btn-dark {
-            background: var(--btn-dark-bg);
-            color: var(--btn-dark-text);
+            background: #333333;
+            color: #fff;
             font-size: 42px;
             font-weight: 400;
         }
@@ -239,9 +146,6 @@
             padding: 30px;
             max-width: 400px;
             width: 90%;
-            max-height: 85vh;
-            display: flex;
-            flex-direction: column;
         }
 
         .menu-header {
@@ -251,7 +155,6 @@
             padding-bottom: 20px;
             margin-bottom: 20px;
             border-bottom: 1px solid #333;
-            flex-shrink: 0;
         }
 
         .menu-title {
@@ -278,22 +181,6 @@
             display: flex;
             flex-direction: column;
             gap: 15px;
-            overflow-y: auto;
-            overflow-x: hidden;
-            padding-right: 5px;
-        }
-
-        .menu-content::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        .menu-content::-webkit-scrollbar-track {
-            background: transparent;
-        }
-
-        .menu-content::-webkit-scrollbar-thumb {
-            background: #444;
-            border-radius: 3px;
         }
 
         .mode-button {
@@ -388,32 +275,6 @@
             border-color: #ff9f0a;
             color: #000;
             font-weight: 600;
-        }
-
-        /* Theme selector styles */
-        .theme-selector {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 15px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #333;
-        }
-
-        .theme-btn {
-            flex: 1;
-            padding: 10px;
-            border-radius: 8px;
-            background: #2c2c2e;
-            color: #fff;
-            border: 2px solid #444;
-            font-size: 14px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-
-        .theme-btn.selected {
-            border-color: #ff9f0a;
-            background: #3c3c3e;
         }
 
         /* Spectator+ mode styles */
@@ -672,29 +533,29 @@
             <div class="display-text" id="display">0</div>
         </div>
         <div class="buttons">
-            <button class="btn btn-gray" id="ac-button" onclick="clearAll()">AC</button>
+            <button class="btn btn-gray" onclick="clearAll()">AC</button>
             <button class="btn btn-gray" onclick="toggleSign()">+/-</button>
             <button class="btn btn-gray" onclick="openSecretMenu()">%</button>
-            <button class="btn btn-orange" onclick="setOperation('÷')"><span>÷</span></button>
+            <button class="btn btn-orange" onclick="setOperation('÷')">÷</button>
             
             <button class="btn btn-dark" onclick="appendNumber('7')">7</button>
             <button class="btn btn-dark" onclick="appendNumber('8')">8</button>
             <button class="btn btn-dark" onclick="appendNumber('9')">9</button>
-            <button class="btn btn-orange" onclick="setOperation('×')"><span>×</span></button>
+            <button class="btn btn-orange" onclick="setOperation('×')">×</button>
             
             <button class="btn btn-dark" onclick="appendNumber('4')">4</button>
             <button class="btn btn-dark" onclick="appendNumber('5')">5</button>
             <button class="btn btn-dark" onclick="appendNumber('6')">6</button>
-            <button class="btn btn-orange" onclick="setOperation('-')"><span>−</span></button>
+            <button class="btn btn-orange" onclick="setOperation('-')">−</button>
             
             <button class="btn btn-dark" onclick="appendNumber('1')">1</button>
             <button class="btn btn-dark" onclick="appendNumber('2')">2</button>
             <button class="btn btn-dark" onclick="appendNumber('3')">3</button>
-            <button class="btn btn-orange" onclick="setOperation('+')"><span>+</span></button>
+            <button class="btn btn-orange" onclick="setOperation('+')">+</button>
             
             <button class="btn btn-dark btn-zero" onclick="appendNumber('0')">0</button>
             <button class="btn btn-dark" onclick="appendDecimal()">,</button>
-            <button class="btn btn-orange" id="equals-btn" onclick="calculate()" ontouchstart="startEqualsLongPress(event)" ontouchend="endEqualsLongPress()" onmousedown="startEqualsLongPress(event)" onmouseup="endEqualsLongPress()"><span>=</span></button>
+            <button class="btn btn-orange" id="equals-btn" onclick="calculate()" ontouchstart="startEqualsLongPress(event)" ontouchend="endEqualsLongPress()" onmousedown="startEqualsLongPress(event)" onmouseup="endEqualsLongPress()">=</button>
         </div>
     </div>
 
@@ -706,14 +567,6 @@
                 <button class="close-btn" onclick="closeSecretMenu()">✕</button>
             </div>
             <div class="menu-content">
-                <!-- Theme Selector -->
-                <div class="theme-selector">
-                    <button class="theme-btn selected" id="theme-iphone-btn" onclick="selectTheme('iphone')">iPhone</button>
-                    <button class="theme-btn" id="theme-sa-btn" onclick="selectTheme('sa')">S.A.</button>
-                    <button class="theme-btn" id="theme-android-light-btn" onclick="selectTheme('android-light')">Android Claro</button>
-                    <button class="theme-btn" id="theme-android-dark-btn" onclick="selectTheme('android-dark')">Android Oscuro</button>
-                </div>
-                
                 <button class="mode-button selected" id="date-mode-btn" onclick="selectMode('date')">
                     <span>Modo Fecha</span>
                     <span class="checkmark">✓</span>
@@ -852,39 +705,6 @@
         let spectatorNumbers = []; // [birthdate, favNumber, ...extras]
         let spectatorCustomResult = '';
         let textTemplate = 'Hoy haré un poco de magia para [Nombre]. Tiene [Edad] años y me da la sensación de que su signo zodiacal es [Signo zodiacal]. Cada pequeño detalle suyo ha sido parte de la ilusión que he creado.';
-        
-        // Theme variable
-        let currentTheme = 'iphone'; // 'iphone', 'sa', 'android-light', or 'android-dark'
-
-        function selectTheme(theme) {
-            currentTheme = theme;
-            
-            // Remove all theme classes
-            document.body.classList.remove('sa', 'android-light', 'android-dark');
-            
-            // Add theme class if not iPhone (iPhone is default/no class)
-            if (theme === 'sa') {
-                document.body.classList.add('sa');
-                document.getElementById('ac-button').textContent = 'C';
-            } else if (theme === 'android-light') {
-                document.body.classList.add('android-light');
-                document.getElementById('ac-button').textContent = 'AC';
-            } else if (theme === 'android-dark') {
-                document.body.classList.add('android-dark');
-                document.getElementById('ac-button').textContent = 'AC';
-            } else {
-                // iPhone
-                document.getElementById('ac-button').textContent = 'AC';
-            }
-            
-            // Update button states
-            document.getElementById('theme-iphone-btn').classList.remove('selected');
-            document.getElementById('theme-sa-btn').classList.remove('selected');
-            document.getElementById('theme-android-light-btn').classList.remove('selected');
-            document.getElementById('theme-android-dark-btn').classList.remove('selected');
-            
-            document.getElementById(`theme-${theme}-btn`).classList.add('selected');
-        }
 
         function updateDisplay() {
             let displayValue = currentValue;
